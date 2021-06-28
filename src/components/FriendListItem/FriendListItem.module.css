@@ -1,0 +1,26 @@
+.onLine {
+  margin-right: 5px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.offLine {
+  composes: onLine;
+  background-color: red;
+}
+
+.avatar {
+  display: block;
+  height: 100%;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+}

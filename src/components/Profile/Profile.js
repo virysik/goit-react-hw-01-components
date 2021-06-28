@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import s from './Profile.module.css';
+import defaultImg from './defaultImg.jpg';
 
-function Profile({ name, tag, location, avatar, stats }) {
+function Profile({ name, tag, location, avatar = defaultImg, stats }) {
   return (
     <div className={s.profile}>
       <div className={s.description}>
@@ -30,10 +31,6 @@ function Profile({ name, tag, location, avatar, stats }) {
 }
 
 export default Profile;
-
-Profile.defaultProps = {
-  avatar: 'https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg',
-};
 
 Profile.propTypes = {
   name: PropTypes.string.isRequired,
