@@ -1,0 +1,41 @@
+.table {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #ecf1f3;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.table th {
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #03bdd5;
+  color: white;
+}
+
+.table td {
+  color: #8d9296;
+}
+
+.table th {
+  text-align: center;
+}
+
+.type:first-letter {
+  text-transform: capitalize;
+}
